@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1670360209 source:d:\education\data-structure-and-algorithm\pattern\interestingpatternsmain\main.cpp
+	<bits/stdc++.h>
+	<vector>
+	<string>
+

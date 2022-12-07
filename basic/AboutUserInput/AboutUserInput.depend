@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1669924049 source:d:\education\data-structure-and-algorithm\basic\aboutuserinput\main.cpp
+	<iostream>
+	<string.h>
+

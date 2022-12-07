@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1670103753 source:d:\education\data-structure-and-algorithm\stl\aboutdeque\main.cpp
+	<iostream>
+	<deque>
+

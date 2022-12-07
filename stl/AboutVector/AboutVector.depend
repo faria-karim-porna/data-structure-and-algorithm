@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1670091116 source:d:\education\data-structure-and-algorithm\stl\aboutvector\main.cpp
+	<iostream>
+	<vector>
+
