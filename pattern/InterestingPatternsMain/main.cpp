@@ -12,29 +12,20 @@ public:
     {
         int maxRowNum = (N * 2) - 1;
         vector<string> rows(maxRowNum);
-        int multiplier;
         int value = N;
-        string valueString;
-        int eachRowMiddle;
+        char valueChar;
         string eachRowMiddleString;
         string frontString = "";
         string backString = "";
 
-        string multiplierString = string(maxRowNum, '1');
-
         for (int row = 0; row < N; row++)
         {
             value = N - row;
-            multiplier = stoi(multiplierString);
-
-            eachRowMiddle = value * multiplier;
-            eachRowMiddleString = to_string(eachRowMiddle);
+            valueChar = 48 + value;
+            eachRowMiddleString = string(maxRowNum - (row * 2), valueChar);
 
             rows[row] = eachRowMiddleString;
             rows[maxRowNum - 1 - row] = eachRowMiddleString;
-
-            multiplierString.pop_back();
-            multiplierString.pop_back();
         }
 
         for (int row = 0; row < N; row++)
