@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1670424693 source:d:\education\data-structure-and-algorithm\pattern\yshapedpatternmain\main.cpp
+	<bits/stdc++.h>
+	<vector>
+	<string>
+
