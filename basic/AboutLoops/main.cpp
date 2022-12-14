@@ -73,25 +73,6 @@ int main()
         cout << "The Continue Statement Iteration Number Is " << m << endl;
     }
 
-    int p = 0;
-jump:
-    for (int n = 0; n <= 15; n++)
-    {
-        // PVALUE:
-        //     p = 0;
-        if (n % 3 == 0)
-        {
-            goto jump;
-        }
-        // if (n % 5 == 0)
-        // {
-        //     goto PVALUE;
-        // }
-        cout << "The Goto Statement Iteration Number Is " << n << endl;
-        cout << "The Goto Statement Iteration Number For P Is " << p << endl;
-        p++;
-    }
-
     for (;;)
     {
         cout << "The Infinite For Loop" << endl;
@@ -107,5 +88,31 @@ jump:
         cout << "The Infinite Do While Loop" << endl;
     } while (1);
 
+    int p = 0;
+    int n = 0;
+LOOP:
+    for (; n <= 20; n++)
+    {
+        cout << "The Goto Statement Iteration Number For P Is " << p << endl;
+        if (p == 7)
+        {
+            goto EXIT;
+        }
+        if (n == 15)
+        {
+            goto LOOP;
+        }
+        if (n == 3)
+        {
+            goto PVALUE;
+        }
+        cout << "The Goto Statement Iteration Number Is " << n << endl;
+        p++;
+    }
+PVALUE:
+    p = 7;
+    n = 2;
+    goto LOOP;
+EXIT:
     return 0;
 }
